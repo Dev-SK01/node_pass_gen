@@ -15,7 +15,8 @@ const clipboardy = require("clipboardy");
 // configuring the terminal commad using commander lib
 program.version("1.0.0").description("A Simple NodeJS password Generator");
 
-
+// defining the options for the command.
+// node index -l 10 -s -nnn -ns
 program
   .option("-l, --length <number>", "length of password", "Default <8>")
   .option("-s, --save", "save password to passwords.txt")
